@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Used Car Shop</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/createCards.js" type="module"></script>
+    <script src="./js/filters.js" type="module"></script>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Used Cars @ Kyle's Pro Shop!</h1>
+    </div>
+    <div class="container">
+      <div class="filters" id="filters">
+        <h2>Filter Options:</h2>
+        <label for="minYear">Minimum Year:</label>
+        <input
+          type="number"
+          id="minYear"
+          name="minYear"
+          min="2016"
+          max="2020"
+          value="2016"
+        />
+
+        <br />
+
+        <label for="maxYear">Maximum Year:</label>
+        <input
+          type="number"
+          id="maxYear"
+          name="maxYear"
+          min="2016"
+          max="2020"
+          value="2020"
+        />
+
+        <br />
+
+        <label for="maxMileage">Maximum Mileage (in miles):</label>
+        <input
+          type="number"
+          id="maxMileage"
+          name="maxMileage"
+          min="0"
+          max="60,000"
+          value="60000"
+        />
+
+        <br />
+
+        <label for="colorSelect">Select a Color:</label>
+        <select id="colorSelect">
+          <option id="all_colors" value="all">All Colors</option>
+          <option id="silver_color" value="silver">Silver</option>
+          <option id="white_color" value="white">White</option>
+          <option id="black_color" value="black">Black</option>
+          <option id="blue_color" value="blue">Blue</option>
+          <option id="red_color" value="red">Red</option>
+          <option id="green_color" value="green">Green</option>
+        </select>
+
+        <br />
+
+        <label for="maxPrice">Maximum Price:</label>
+        <input
+          type="number"
+          id="maxPrice"
+          name="maxPrice"
+          min="12000"
+          value="60000"
+        />
+
+        <br />
+
+        <label for="carSelect">Select a Car:</label>
+        <select id="carSelect">
+          <option id="no_filter" value="none">No Filter</option>
+          <option id="toyota_filter" value="toyota">Toyota</option>
+          <option id="honda_filter" value="honda">Honda</option>
+          <option id="ford_filter" value="ford">Ford</option>
+          <option id="nissan_filter" value="nissan">Nissan</option>
+          <option id="chevy_filter" value="chevrolet">Chevrolet</option>
+        </select>
+
+        <br />
+        <button type="button" id="filter_button">Filter by input values</button>
+      </div>
+      <div class="cargrid" id="cargrid"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  height: 100%;
+}
+.heading {
+  text-align: center;
+  background-color: yellow;
+}
+#cargrid {
+  width: 75%;
+  float: right;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: gray;
+  flex-shrink: 3;
+  flex-flow: space-between;
+  align-items: stretch;
+}
+.car-card img {
+  height: 25%;
+  margin: auto;
+}
+.car-card {
+  width: 33%;
+}
+.filterHidden {
+  display: none;
+}
+#cargrid p {
+  padding: 10px;
+}
+.filters {
+  width: 15%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+}
